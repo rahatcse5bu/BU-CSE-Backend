@@ -1,6 +1,6 @@
-#### https://bu-cse-backend-anichu-anichus-projects.vercel.app/
+#### https://bucse.vercel.app/
 
-### https://bu-cse-backend-anichu-anichus-projects.vercel.app/users/:userId [GET] for getting user
+### https://bucse.vercel.app/users/:userId [GET] for getting user
 
 ```
 {
@@ -25,7 +25,7 @@
 }
 ```
 
-### https://bu-cse-backend-anichu-anichus-projects.vercel.app/users/:userId [DELETE] for deleting user
+### https://bucse.vercel.app/users/:userId [DELETE] for deleting user
 
 ```
 {
@@ -50,7 +50,7 @@
 }
 ```
 
-### https://bu-cse-backend-anichu-anichus-projects.vercel.app/register [POST] for registration
+### https://bucse.vercel.app/register [POST] for registration
 
 ```
 {
@@ -68,8 +68,8 @@
 
 ```
 
+### https://bucse.vercel.app/users [Get] for getting all users
 
-### https://bu-cse-backend-anichu-anichus-projects.vercel.app/users [Get] for getting all users
 ```
 
 {
@@ -119,8 +119,7 @@
 }
 ```
 
-
-### https://bu-cse-backend-anichu-anichus-projects.vercel.app/login [POST] for authentication
+### https://bucse.vercel.app/login [POST] for authentication
 
 ```
 
@@ -132,7 +131,7 @@
 
 ```
 
-### https://bu-cse-backend-anichu-anichus-projects.vercel.app/users/:userId [PUT] for updating user
+### https://bucse.vercel.app/users/:userId [PUT] for updating user
 
 ```
   "lastName": "molla",
