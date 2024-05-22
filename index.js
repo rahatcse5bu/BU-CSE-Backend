@@ -76,6 +76,47 @@ app.get("/users", async (req, res) => {
     });
   }
 });
+app.get("/users/:userId", async (req, res) => {
+  const userId = req.params.userId;
+  // make get  user api
+  try {
+    const users = await User.findById(userId);
+    res.json({
+      success: true,
+      data: users,
+      message: "Get All users",
+    });
+  } catch (error) {
+    res.status(500).json({
+      error,
+      message: error.message,
+    });
+  }
+});
+app.delete("/users/:userId", async (req, res) => {
+  const userId = req.params.userId;
+
+  try {
+    const deletedUser = await User.findByIdAndDelete(userId);
+    if (!deletedUser) {
+      return res.status(404).json({
+        success: false,
+        message: "User not found",
+      });
+    }
+
+    res.json({
+      success: true,
+      data: deletedUser,
+      message: "User deleted successfully",
+    });
+  } catch (error) {
+    res.status(500).json({
+      error,
+      message: error.message,
+    });
+  }
+});
 
 app.put("/users/:userId", async (req, res) => {
   try {
